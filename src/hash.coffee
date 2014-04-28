@@ -20,9 +20,9 @@ module.exports = class Hash extends Event
 
     if pathname == '/' then pathname = ''
 
-    console.log "@base_path ->", @base_path
-    console.log "hash ->", hash
-    console.log "pathname ->", pathname
+    # console.log "@base_path ->", @base_path
+    # console.log "hash ->", hash
+    # console.log "pathname ->", pathname
 
     if hash is ''
       if pathname.length > 1
