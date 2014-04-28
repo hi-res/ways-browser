@@ -27,7 +27,7 @@ module.exports = class Hash extends Event
     if hash is ''
       if pathname.length > 1
 
-        console.warn 1 + " : " + @base_path + '#/'+ pathname
+        # console.warn 1 + " : " + @base_path + '#/'+ pathname
         window.location.href = @base_path + '#/'+ pathname
       # else
       #   console.warn 2
@@ -35,7 +35,7 @@ module.exports = class Hash extends Event
       #   window.location.href = @base_path + '#/'
 
     window.attachEvent 'onhashchange', =>
-      console.warn 3
+      # console.warn 3
 
       @emit 'url:change', @pathname()
     , false
@@ -46,7 +46,7 @@ module.exports = class Hash extends Event
     if pathname.substr( 0, 2 ) == '#/'
       pathname = pathname.substr( 2 )
     
-    console.warn "pathname returning  -> ", pathname
+    # console.warn "pathname returning  -> ", pathname
 
     pathname
 
