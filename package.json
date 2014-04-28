@@ -1,0 +1,54 @@
+{
+  "name": "ways-browser",
+  "version": "0.1.1",
+  "author": {
+    "name": "Anderson Arboleya",
+    "email": "anderson@arboleya.me"
+  },
+  "description": "Browser middleware for Ways, supporting both pushState and #hash urls.",
+  "keywords": [
+    "router",
+    "navigation",
+    "browser",
+    "middleware"
+  ],
+  "main": "./lib",
+  "scripts": {
+    "test": "make test"
+  },
+  "directories": {
+    "src": "./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/serpentem/ways-browser"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "dependencies": {
+    "happens": "0.3.x"
+  },
+  "devDependencies": {
+    "wd": "0.2.x",
+    "coffee-script": "1.6.x",
+    "chai": "1.8.x",
+    "mocha": "1.14.x",
+    "mversion": "0.2.x",
+    "coveralls": "2.3.x",
+    "istanbul-middleware": "0.1.x",
+    "express": "3.3.x",
+    "polvo": "0.6.x",
+    "fs-util": "0.3.x",
+    "optimist": "0.6.x",
+    "request": "2.27.x"
+  },
+  "readme": "# Browser Middleware for Ways\n\nBrowser middleware for [Ways](https://github.com/serpentem/ways), supporting both pushState and #hash urls.\n\n[![Stories in Ready](https://badge.waffle.io/serpentem/ways-browser.png)](http://waffle.io/serpentem/ways-browser)\n\n[![Selenium Test Status](https://saucelabs.com/buildstatus/ways-browser)](https://saucelabs.com/u/ways-browser) [![Build Status](https://travis-ci.org/serpentem/ways-browser.png?branch=master)](http://travis-ci.org/serpentem/ways-browser) [![Coverage Status](https://coveralls.io/repos/serpentem/ways-browser/badge.png)](https://coveralls.io/r/serpentem/ways-browser)\n\n[![Dependency Status](https://gemnasium.com/serpentem/ways-browser.png)](https://gemnasium.com/serpentem/ways-browser) [![NPM version](https://badge.fury.io/js/ways-browser.png)](http://badge.fury.io/js/ways-browser)\n\n[![Selenium Test Status](https://saucelabs.com/browser-matrix/ways-browser.svg)](https://saucelabs.com/u/ways-browser)\n\n\n> Attention, is a **WIP**! Do not use it yet.\n\n## Usage\n\nFor usage, check out the Ways [docs](https://github.com/serpentem/ways/#middlewares).\n\n# License\n\nThe MIT License (MIT)\n\nCopyright (c) 2013 Anderson Arboleya\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/serpentem/ways-browser/issues"
+  },
+  "homepage": "https://github.com/serpentem/ways-browser",
+  "_id": "ways-browser@0.1.1",
+  "_from": "ways-browser@*"
+}
