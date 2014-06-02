@@ -44,7 +44,7 @@ module.exports = class Hash extends Event
     @history.push @history.state = state
     window.location.hash = url
     document.title = title if title?
-    @emit 'url:change', @pathname()
+    # @emit 'url:change', @pathname()
 
   replace:( url, title, state )->
 
