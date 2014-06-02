@@ -3,6 +3,12 @@
 In some cases your site won't run on the root url of the domain, then you need
 to add some replaces here and there in order to get the address bar going right.
 
+In order to use the hack you must declare
+
+window.base_path = "/your_base_path"
+
+NOTE: we not using forward slash at the end of the string
+
 # Browser Middleware for Ways
 
 Browser middleware for [Ways](https://github.com/serpentem/ways), supporting both pushState and #hash urls.
