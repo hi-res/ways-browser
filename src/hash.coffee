@@ -30,7 +30,7 @@ module.exports = class Hash extends Event
     if !@base_path
       window.location.hash
     else
-      index   = String(window.location).indexOf( @base_path )
+      index   = String( window.location ).indexOf( @base_path )
       address = String( window.location ).substr( index )
       address.replace @base_path, ''
 
@@ -47,6 +47,11 @@ module.exports = class Hash extends Event
     @emit 'url:change', @pathname()
 
   replace:( url, title, state )->
+
+    if @base_path?
+      if url.indexOf( @base_path ) != -1
+        url = url.replace @base_path, ''
+    
     @history[@history.length-1] = @history.state = state
     document.title = title if title?
     window.location.hash.replace url

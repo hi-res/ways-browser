@@ -11,8 +11,6 @@ module.exports = class Index extends Event
   constructor:->
     @base_path = window.location.base_path || ''
 
-    console.log "222 ->", @base_path
-    
     if window.history.pushState?
       @api = new History @base_path
     else
