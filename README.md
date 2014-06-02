@@ -1,3 +1,8 @@
+# this version adds a hack to support "base_path"
+
+In some cases your site won't run on the root url of the domain, then you need
+to add some replaces here and there in order to get the address bar going right.
+
 # Browser Middleware for Ways
 
 Browser middleware for [Ways](https://github.com/serpentem/ways), supporting both pushState and #hash urls.

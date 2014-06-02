@@ -4,14 +4,21 @@ History = require './history'
 Hash = require './hash'
 
 module.exports = class Index extends Event
+  
   api: null
+  base_path: null
 
   constructor:->
-    if window.history.pushState?
-      @api = new History
-    else
-      @api = new Hash 
+    @base_path = window.location.base_path || ''
+
+    console.log "222 ->", @base_path
     
+    if window.history.pushState?
+      @api = new History @base_path
+    else
+      @api = new Hash @base_path
+    
+
     @api.on 'url:change', (pathname)=>
       @emit 'url:change', pathname
 

@@ -9,7 +9,7 @@
     "browser",
     "middleware"
   ],
-  "main": "./lib",
+  "main": "./src",
   "scripts": {
     "test": "make test"
   },
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/serpentem/ways-browser"
+    "url": "http://github.com/hems/ways-browser"
   },
   "engines": {
     "node": ">= 0.10"

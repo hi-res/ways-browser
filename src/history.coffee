@@ -3,12 +3,12 @@ Event = require 'happens'
 module.exports = class History extends Event
   history: window.history
 
-  constructor:->
+  constructor:(@base_path)->
     # popped = false
     # initial = @pathname()
 
-    if window.location.hash?.length
-      @replace window.location.hash.substr 1
+    # if window.location.hash?.length
+    #   @replace window.location.hash.substr 1
 
     window.addEventListener 'popstate', =>
 
